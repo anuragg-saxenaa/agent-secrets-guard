@@ -22,7 +22,7 @@ _PATTERNS: list[tuple[str, re.Pattern, str]] = [
     ),
     (
         "Slack Token",
-        re.compile(r"xox[baprs]-[0-9]{10,13}-[0-9]{10,13}-[a-zA-Z0-9]{24,}", re.ASCII),
+        re.compile(r"xox[baprs]-[a-zA-Z0-9]{10,}-[a-zA-Z0-9]{10,}-[a-zA-Z0-9]{24,}", re.ASCII),
         "Slack bot/user token",
     ),
     (
